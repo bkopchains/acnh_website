@@ -1,6 +1,6 @@
 
 .App {
-  text-align: center;
+  
 }
 
 html {
@@ -21,18 +21,14 @@ html {
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #d9ffcd;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.TitleBox {
+  background-color: #d9ffcd;
+  font-size: calc(10px + 2vmin);
+  padding: 15px;
 }
 
 tr:nth-child(even) {
@@ -59,11 +55,25 @@ th {
   padding: 5px;
 }
 
+.App-Body {
+  padding: 15px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row;
+}
+
 .critterSection {
-  width: 100%;
+  width: 100%; 
   max-width: 400px;
   margin: 10px;
 }
+.critterSection > h3 {
+  text-align: center;
+}
+
+
 .critterSection > h3 {
   text-align: center;
 }

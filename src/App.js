@@ -24,7 +24,7 @@ const App = () => {
     const date = new Date()
     const hour = date.getHours();
     const mins = date.getMinutes();
-    const dString = hour + ":" + mins + ", " + date.toDateString();
+    const dString = hour + ":" + (Number(mins) < 10 ? "0" + mins : mins) + ", " + date.toDateString();
     setDateString(dString)
   },[])
 
