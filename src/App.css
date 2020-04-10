@@ -1,8 +1,3 @@
-
-.App {
-  
-}
-
 html {
   background-image: url("img/grassTile.jpg");
   background-repeat: repeat;
@@ -10,8 +5,12 @@ html {
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
+}
+
+.Selector {
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -90,6 +89,46 @@ th {
   width: 100%;
   max-width: 400px;
   margin: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  width: 100%;
+  background: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+  background-color: #d9ffcd;
+}
+tr {
+  border: 1px solid #CCCCCC;
+}
+
+th:nth-child(even) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+th:nth-child(odd) {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+}
+
+.critterSection {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px;
+}
+.critterSection > h3 {
+  text-align: center;
+}
+
+.critterTable {
   border: 1px solid #CCCCCC;
   border-radius: 4px;
   width: 100%;
