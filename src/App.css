@@ -1,7 +1,7 @@
 html {
-  background-image: url("img/grassTile.jpg");
+  background-image: url("img/parchment.jpg");
   background-repeat: repeat;
-  background-size: 300px 300px;
+  background-size: 1000px 1000px; 
 }
 
 .App-logo {
@@ -20,38 +20,15 @@ html {
 }
 
 .App-header {
-  background-color: #d9ffcd;
+  background-color: #F1ECC6;
   text-align: center;
 }
 
 .TitleBox {
-  background-color: #d9ffcd;
+  background-color: #D3CE71;
   font-size: calc(10px + 2vmin);
   padding: 15px;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-tr:nth-child(odd) {
-  background-color: #d9ffcd;
-}
-tr {
-  border: 1px solid #CCCCCC;
-}
-
-th:nth-child(even) {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-th:nth-child(odd) {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-
-th {
-  text-align: left;
-  padding: 5px;
+  border-bottom: 5px solid yellow
 }
 
 .App-Body {
@@ -89,27 +66,28 @@ th {
   width: 100%;
   max-width: 400px;
   margin: 10px;
-  border: 1px solid #CCCCCC;
+  border: 3px solid #CCCCCC;
   border-radius: 4px;
   width: 100%;
   background: white;
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #F4F2DB;
 }
 tr:nth-child(odd) {
-  background-color: #d9ffcd;
-}
-tr {
-  border: 1px solid #CCCCCC;
+  background-color: #F1ECC6;
 }
 
-th:nth-child(even) {
+.critterTable td {
+  padding: 5px;
+}
+
+.pickerTable td, .tableEnd {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-th:nth-child(odd) {
+.pickerTable th, .tableStart {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
@@ -126,13 +104,6 @@ th {
 }
 .critterSection > h3 {
   text-align: center;
-}
-
-.critterTable {
-  border: 1px solid #CCCCCC;
-  border-radius: 4px;
-  width: 100%;
-  background: white;
 }
 
 @keyframes App-logo-spin {

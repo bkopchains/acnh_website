@@ -2,7 +2,7 @@ import React from "react";
 
 const BugTable = ({bugData}) => {
   return (
-    <table className="critterTable">
+    <table className="critterTable pickerTable">
       <tr>
         <th>Name:</th>
         <td>{bugData.name}</td>

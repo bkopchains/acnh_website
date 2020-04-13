@@ -56,7 +56,7 @@ const App = () => {
       <div className="App">
         <header className="App-header">
           <div className="TitleBox">
-            <div>ACNH Critter Data</div>
+            <h3 style={{margin: "0px"}}>ACNH Critter Data</h3>
           </div>
         </header>
         <div className="App-Body">
@@ -81,7 +81,8 @@ const App = () => {
         </div>
         <div className="App-Body">
           <div className="critterSection">
-            <h3>What To Look for at {dateString}</h3>
+            <h3 style={{margin: "0px"}}>What To Look for Now:</h3>
+            <h3 style={{marginTop: "0px"}}>{dateString}</h3>
             <SuggestionTable tableData={WHATTODO}/>
           </div>
         </div>

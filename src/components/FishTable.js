@@ -2,7 +2,7 @@ import React from 'react';
 
 const FishTable = ({fishData}) => {
   return (
-    <table className="critterTable">
+    <table className="critterTable pickerTable">
       <tr>
         <th>Name:</th>
         <td>{fishData.name}</td>

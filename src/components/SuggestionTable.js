@@ -5,9 +5,9 @@ const SuggestionTable = ({ tableData = [] }) => {
     const tableRows = tableData.map((datum) => {
         return (
             <tr>
-                <td>{datum.name}</td>
+                <td className="tableStart">{datum.name}</td>
                 <td>{datum.price}</td>
-                <td>{datum.location}</td>
+                <td className="tableEnd">{datum.location}</td>
             </tr>
         )
     })
@@ -15,9 +15,9 @@ const SuggestionTable = ({ tableData = [] }) => {
   return (
     <table className="critterTable">
       <tr>
-        <th>Name</th>
+        <th className="tableStart">Name</th>
         <th>Price</th>
-        <th>Location</th>
+        <th className="tableEnd">Location</th>
       </tr>
       {tableRows}
     </table>
