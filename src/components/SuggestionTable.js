@@ -13,7 +13,7 @@ const SuggestionTable = ({ tableData = [] }) => {
     })
 
   return (
-    <table className="critterTable">
+    <table className="critterTable" cellSpacing="5">
       <tr>
         <th className="tableStart">Name</th>
         <th>Price</th>
