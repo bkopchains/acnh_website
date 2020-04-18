@@ -38,7 +38,7 @@ const App = () => {
   const WHATTODO = useMemo(() => {
     const date = new Date();
     const Hour = date.getHours();
-    const Month = date.getMonth();
+    const Month = date.getMonth() + 1;
     const currentFish = R.filter((fish) => {
       return fish.times.array.includes(Hour) && fish.months.northern.array.includes(Month)
     }, FISH_FIXED)
