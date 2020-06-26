@@ -55,7 +55,7 @@ const App = () => {
     <>
       <div className="App">
         <header className="App-header">
-          <div className="TitleBox">
+          <div className="TitleBox neuoMorphismOut">
             <h3 style={{margin: "0px"}}>ACNH Critter Data</h3>
           </div>
         </header>
@@ -80,7 +80,7 @@ const App = () => {
           </div>
         </div>
         <div className="App-Body">
-          <div className="critterSection">
+          <div className="suggestionSection">
             <h3 style={{margin: "0px"}}>What To Look for Now:</h3>
             <h3 style={{marginTop: "0px"}}>{dateString}</h3>
             <SuggestionTable tableData={WHATTODO}/>

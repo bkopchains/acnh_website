@@ -2,7 +2,7 @@ import React from 'react';
 
 const FishTable = ({fishData}) => {
   return (
-    <table className="critterTable pickerTable"  cellSpacing="5">
+    <table className="critterTable pickerTable neuoMorphismOut"  cellSpacing="5">
       <tr>
         <th>Name:</th>
         <td>{fishData.name}</td>
