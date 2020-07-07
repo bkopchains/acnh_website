@@ -5,7 +5,7 @@ const BugTable = ({bugData}) => {
     bugData &&
     <div className="neuMorphismOut citterContainer">
         <div className="neuMorphismIn critterImageContainer">
-          <img src={bugData.image_uri} style={{width: "75%"}} title={bugData["catch-phrase"]}/>
+          <img src={bugData.image_uri} style={{maxWidth: "250px"}} title={bugData["catch-phrase"]}/>
         </div>
         <table className="critterTable pickerTable"  cellSpacing="5">
           <tbody>

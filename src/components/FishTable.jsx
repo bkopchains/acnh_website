@@ -5,7 +5,7 @@ const FishTable = ({fishData}) => {
     fishData &&
     <div className="neuMorphismOut critterContainer">
         <div className="neuMorphismIn critterImageContainer">
-          <img src={fishData.image_uri} style={{width: "100%"}} title={fishData["catch-phrase"]}/>
+          <img src={fishData.image_uri} style={{maxWidth: "250px"}} title={fishData["catch-phrase"]}/>
         </div>
         <table className="critterTable pickerTable"  cellSpacing="5">
           <tbody>

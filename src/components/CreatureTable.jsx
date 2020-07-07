@@ -5,7 +5,7 @@ const CreatureTable = ({creatureData}) => {
     creatureData &&
     <div className="neuMorphismOut citterContainer">
         <div className="neuMorphismIn critterImageContainer">
-          <img src={creatureData.image_uri} style={{width: "75%"}} title={creatureData["catch-phrase"]}/>
+          <img src={creatureData.image_uri} style={{maxWidth: "250px"}} title={creatureData["catch-phrase"]}/>
         </div>
         <table className="critterTable pickerTable"  cellSpacing="5">
           <tbody>
