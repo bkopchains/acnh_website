@@ -79,7 +79,7 @@ html {
 .critterSection {
   display: flex;
   flex-direction: column;
-  width: 400px; 
+  max-width: 400px; 
   margin: 10px;
 }
 .critterSection > h3, .suggestionSection > h3 {
@@ -98,6 +98,12 @@ html {
 .critterSection > h3 {
   text-align: center;
   margin-top: 0px
+}
+
+.citterContainer {
+  display:"flex";
+  flex-direction: "column";
+  max-width: "400px";
 }
 
 .critterTable {

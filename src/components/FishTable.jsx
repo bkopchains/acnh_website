@@ -3,7 +3,7 @@ import React from 'react';
 const FishTable = ({fishData}) => {
   return (
     fishData &&
-    <div className="neuMorphismOut" style={{display:"flex", flexDirection: "column", width: "400px"}}>
+    <div className="neuMorphismOut critterContainer">
         <div className="neuMorphismIn critterImageContainer">
           <img src={fishData.image_uri} style={{width: "100%"}} title={fishData["catch-phrase"]}/>
         </div>

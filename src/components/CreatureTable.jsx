@@ -3,7 +3,7 @@ import React from 'react';
 const CreatureTable = ({creatureData}) => {
   return (
     creatureData &&
-    <div className="neuMorphismOut" style={{display:"flex", flexDirection: "column", width: "400px"}}>
+    <div className="neuMorphismOut citterContainer">
         <div className="neuMorphismIn critterImageContainer">
           <img src={creatureData.image_uri} style={{width: "75%"}} title={creatureData["catch-phrase"]}/>
         </div>
