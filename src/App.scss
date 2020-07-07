@@ -1,0 +1,136 @@
+$light-bkg: #f1f1f1;
+$light-bkg-txt: #e4e4e488;
+$neuBorder: #f3f3f30c;
+$neuOutShadow: -6px -6px 20px #ffffff, 6px 6px 10px #dedede;
+$neuInShadow: inset -6px -6px 13px #ffffff, inset 6px 6px 8px #dedede;
+
+
+html {
+  background-color: $light-bkg;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+.Selector {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  } */
+}
+
+.neuMorphismOut {
+  background-color: $light-bkg;
+  border-radius: 12px;
+  border: 1px solid $neuBorder;
+  box-shadow: $neuOutShadow
+}
+
+// .neuMorphismOut.TitleBox:hover {
+//   border-radius: 12px;
+//   background: $light-bkg;
+//   border: 1px solid $neuBorder;
+//   box-shadow: $neuInShadow
+// }
+
+.neuMorphismIn, .neuMorphismOut th, .neuMorphismOut td {
+  border-radius: 12px;
+  background: $light-bkg;
+  border: 1px solid $neuBorder;
+  box-shadow: $neuInShadow
+}
+
+// .neuMorphismIn:hover, .neuMorphismOut th:hover, .neuMorphismOut td:hover {
+//   background-color: $light-bkg;
+//   border-radius: 12px;
+//   border: 1px solid $neuBorder;
+//   box-shadow: $neuOutShadow
+// }
+
+.App-header {
+  background-color: $light-bkg;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.TitleBox {
+  font-size: calc(10px + 2vmin);
+  text-align: center !important;
+  padding: 15px;
+  margin: 20px;
+  width: 284px;
+}
+
+.App-Body {
+  padding: 0px 15px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+.critterSection {
+  display: flex;
+  flex-direction: column;
+  width: 400px; 
+  margin: 10px;
+}
+.critterSection > h3, .suggestionSection > h3 {
+  text-align: center;
+}
+.critterImageContainer {
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px 0px;
+  flex-direction: column;
+  display: flex;
+  padding: 20px;
+}
+
+
+.critterSection > h3 {
+  text-align: center;
+  margin-top: 0px
+}
+
+.critterTable {
+  margin: 20px;
+}
+.critterTable th {
+  width: 100px;
+}
+
+.suggestionSection{
+  height: 200px;
+  width: 100%;
+  margin: 10px;
+  width: 100%;
+}
+
+.critterTable td, .critterTable th {
+  padding: 5px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px !important;
+}
+
+h3, th, td, tr{
+  text-align: left;
+  padding: 5px;
+  background-color: #000000 !important;
+  color: transparent !important;
+  text-shadow: 0px 2px 3px $light-bkg-txt !important;
+  -webkit-background-clip: text !important;
+     -moz-background-clip: text !important;
+          background-clip: text !important;
+}
