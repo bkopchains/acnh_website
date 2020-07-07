@@ -5,15 +5,15 @@ const SuggestionTable = ({ tableData = [] }) => {
     const tableRows = tableData.map((datum) => {
         return (
             <tr>
-                <td className="tableStart neuoMorphismIn">{datum.name}</td>
-                <td className="neuoMorphismIn">{datum.price}</td>
-                <td className="tableEnd neuoMorphismIn">{datum.location}</td>
+                <td className="tableStart neuMorphismIn">{datum.name}</td>
+                <td className="neuMorphismIn">{datum.price}</td>
+                <td className="tableEnd neuMorphismIn">{datum.location}</td>
             </tr>
         )
     })
 
   return (
-    <table className="critterTable neuoMorphismOut" cellSpacing="5">
+    <table className="critterTable neuMorphismOut" cellSpacing="5">
       <tr>
         <th className="tableStart">Name</th>
         <th>Price</th>
