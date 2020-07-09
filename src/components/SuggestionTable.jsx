@@ -1,4 +1,5 @@
 import React from "react";
+import Skeleton from 'react-loading-skeleton';
 
 const SuggestionTable = ({ tableData = [] }) => {
   
@@ -13,13 +14,15 @@ const SuggestionTable = ({ tableData = [] }) => {
     })
 
   return (
-    <table className="critterTable neuMorphismOut" cellSpacing="5">
-      <tr>
+    <table className="critterTable neuMorphismOut gradient-box" cellSpacing="5">
+      {/* <tr>
         <th className="tableStart">Name</th>
         <th>Price</th>
         <th className="tableEnd">Location</th>
       </tr>
-      {tableRows}
+      {tableRows} */}
+      <Skeleton/>
+      <Skeleton count={5} />
     </table>
   );
 };

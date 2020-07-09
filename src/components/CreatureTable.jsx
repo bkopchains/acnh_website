@@ -3,7 +3,7 @@ import React from 'react';
 const CreatureTable = ({creatureData}) => {
   return (
     creatureData &&
-    <div className="neuMorphismOut citterContainer">
+    <div className="neuMorphismOut citterContainer gradient-box">
         <div className="neuMorphismIn critterImageContainer">
           <img src={creatureData.image_uri} style={{maxWidth: "250px"}} title={creatureData["catch-phrase"]}/>
         </div>

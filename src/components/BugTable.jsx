@@ -3,7 +3,7 @@ import React from 'react';
 const BugTable = ({bugData}) => {
   return (
     bugData &&
-    <div className="neuMorphismOut citterContainer">
+    <div className="neuMorphismOut citterContainer gradient-box">
         <div className="neuMorphismIn critterImageContainer">
           <img src={bugData.image_uri} style={{maxWidth: "250px"}} title={bugData["catch-phrase"]}/>
         </div>
