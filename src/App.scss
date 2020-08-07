@@ -37,13 +37,15 @@ $neuOutShadow: $lightNeuOutShadow;
     z-index: -1;
     margin: -$border; /* !importanté */
     border-radius: inherit; /* !importanté */
-    background: $sunset;
-    //background: linear-gradient(80deg, $metal 0%, #ffffff 50%, $metal 100%)
+    //background: $sunset;
+    background: linear-gradient(80deg, $metal 0%, #ffffff 50%, $metal 100%)
   }
 }
 
 html {
-  background: $sunset-half;
+  background: $light-bkg;
+  height: 100%;
+  background-attachment: fixed;
 }
 
 .App-logo {
