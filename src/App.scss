@@ -43,7 +43,7 @@ $neuOutShadow: $lightNeuOutShadow;
 }
 
 html {
-  background: $light-bkg;
+  background: $sunset-half;
   height: 100%;
   background-attachment: fixed;
 }
@@ -153,10 +153,9 @@ html {
 }
 
 .suggestionSection{
-  height: 200px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 10px;
-  width: 100%;
 }
 
 .critterTable td, .critterTable th {

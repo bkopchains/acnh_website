@@ -66,6 +66,27 @@ const App = () => {
       setCreatureData(formatted[0]);
     });
   },[])
+  
+  const isCritterAvailableNow = (critter) => {
+    const time = critter.availability["time-array"];
+    const month = critter.availability["month-array-northern"];
+    const now = new Date();
+    return (month.includes(now.getMonth() + 1) && time.includes(now.getHours() + 1));
+  }
+
+  const availableNow = useMemo(() => {
+    const simpleBugs = allBugs.filter(isCritterAvailableNow).map((bug) => {
+      return {name: bug.name, price: bug.price, location: bug.availability.location, icon: bug.icon_uri}
+    });
+    const simpleCreatures = allCreatures.filter(isCritterAvailableNow).map((creature) => {
+      return {name: creature.name, price: creature.price, location: "Ocean", icon: creature.icon_uri}
+    });
+    const simpleFish = allFish.filter(isCritterAvailableNow).map((fish) => {
+      return {name: fish.name, price: fish.price, location: fish.availability.location, icon: fish.icon_uri}
+    });
+    const allCritters = R.sort(R.descend(R.prop('price')), simpleBugs.concat(simpleCreatures, simpleFish));
+    return allCritters
+  },[dateString, allBugs, allCreatures, allFish])
 
   return (
     <>
@@ -115,13 +136,13 @@ const App = () => {
             <Skeleton count={5} />
           }
         </div>
-        {/* <div className="App-Body">
-          <div className="critterSection">
+        <div className="App-Body">
+          <div className="suggestionSection">
             <h3 style={{margin: "0px"}}>What To Look for Now:</h3>
             <h3 style={{marginTop: "0px"}}>{dateString}</h3>
-            <SuggestionTable tableData={[]}/> 
+            <SuggestionTable tableData={availableNow}/> 
           </div>
-        </div>  */}
+        </div> 
       </div>
     </>
   );
